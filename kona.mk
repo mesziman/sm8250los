@@ -406,5 +406,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+PRODUCT_VENDOR_PROPERTIES += \
+	pm.dexopt.ab-ota=speed-profile \
+	dalvik.vm.dexopt.secondary=true \
+	ro.vendor.qti.am.reschedule_service=true \
+	pm.dexopt.install=speed-profile \
+	ro.sys.fw.dex2oat_thread_count=8 \
+	dalvik.vm.dex2oat-threads=4 \
+	dalvik.vm.image-dex2oat-threads=4
+
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sm8250-common/sm8250-common-vendor.mk)
