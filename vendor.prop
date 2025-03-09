@@ -256,6 +256,12 @@ vendor.usb.use_gadget_hal=1
 ro.config.media_vol_steps=30
 ro.config.vc_call_vol_steps=11
 
+
+# Machine learning back gesture (requires TensorFlow model) 
+persist.device_config.systemui.use_back_gesture_ml_model=true
+persist.device_config.systemui.back_gesture_ml_model_name=backgesture
+persist.device_config.systemui.back_gesture_ml_model_threshold=0.9
+
 # WiFi
 wifi.aware.interface=wifi-aware0
 
