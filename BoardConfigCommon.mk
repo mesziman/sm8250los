@@ -233,6 +233,9 @@ DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += nfc
 ODM_MANIFEST_NFC_FILES := $(COMMON_PATH)/manifest_nfc.xml
 
+# Enable IEEE 802.11ax support
+CONFIG_IEEE80211AX := true
+
 # Wi-Fi
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_HOSTAPD_DRIVER := NL80211
