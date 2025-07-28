@@ -2,8 +2,11 @@
 # Copyright (C) 2021-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
-#
 
+
+TARGET_SUPPORTS_64_BIT_APPS := true
+TARGET_BUILD_GAPPS := true
+TARGET_BOARD_PLATFORM := kona
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
