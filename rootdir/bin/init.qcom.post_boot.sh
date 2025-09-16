@@ -837,7 +837,9 @@ function configure_zram_parameters() {
         let zRamSizeMB=4096
     fi
 
-    echo zstd > /sys/block/zram0/comp_algorithm
+    if [ "$low_ram" == "true" ]; then
+        echo lz4 > /sys/block/zram0/comp_algorithm
+    fi
 
     if [ -f /sys/block/zram0/disksize ]; then
         disksize=`cat /sys/block/zram0/disksize`
