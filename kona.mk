@@ -413,9 +413,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 	dalvik.vm.dexopt.secondary=true \
 	ro.vendor.qti.am.reschedule_service=true \
 	pm.dexopt.install=speed-profile \
-	ro.sys.fw.dex2oat_thread_count=8 \
-	dalvik.vm.dex2oat-threads=4 \
-	dalvik.vm.image-dex2oat-threads=4
+	ro.sys.fw.dex2oat_thread_count=8
 
 
 # Inherit the proprietary files
