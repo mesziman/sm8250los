@@ -154,7 +154,7 @@ ifneq ($(TARGET_IS_TABLET),true)
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor_phone.prop
 endif
 
-BOARD_USES_FULL_RECOVERY_IMAGE := false
+#BOARD_USES_FULL_RECOVERY_IMAGE := false
 # Recovery
 ifeq ($(TARGET_IS_VAB),true)
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab_AB.qcom
