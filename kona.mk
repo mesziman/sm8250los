@@ -21,7 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.incremental.enable=yes
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
+TARGET_BUILD_LINDROID := true
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
