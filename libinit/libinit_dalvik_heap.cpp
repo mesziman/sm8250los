@@ -19,7 +19,7 @@
 
 #define GB(b) (b * 1024ull * 1024 * 1024)
 
-static const dalvik_heap_info_t dalvik_heap_info_8192 = {
+static const dalvik_heap_info dalvik_heap_info_8192 = {
     .heapstartsize = "16m",
     .heapgrowthlimit = "384m",
     .heapsize = "512m",
@@ -29,7 +29,7 @@ static const dalvik_heap_info_t dalvik_heap_info_8192 = {
 };
 
 
-static const dalvik_heap_info_t dalvik_heap_info_6144 = {
+static const dalvik_heap_info dalvik_heap_info_6144 = {
         .heapstartsize = "16m",
         .heapgrowthlimit = "256m",
         .heapsize = "512m",
@@ -38,7 +38,7 @@ static const dalvik_heap_info_t dalvik_heap_info_6144 = {
         .heaptargetutilization = "0.5",
 };
 
-static const dalvik_heap_info_t dalvik_heap_info_4096 = {
+static const dalvik_heap_info dalvik_heap_info_4096 = {
         .heapstartsize = "8m",
         .heapgrowthlimit = "256m",
         .heapsize = "512m",
@@ -47,7 +47,7 @@ static const dalvik_heap_info_t dalvik_heap_info_4096 = {
         .heaptargetutilization = "0.6",
 };
 
-static const dalvik_heap_info_t dalvik_heap_info_2048 = {
+static const dalvik_heap_info dalvik_heap_info_2048 = {
         .heapstartsize = "8m",
         .heapgrowthlimit = "192m",
         .heapsize = "512m",
@@ -58,7 +58,7 @@ static const dalvik_heap_info_t dalvik_heap_info_2048 = {
 
 void set_dalvik_heap() {
     struct sysinfo sys;
-    const dalvik_heap_info_t* dhi;
+    const dalvik_heap_info* dhi;
 
     sysinfo(&sys);
 
