@@ -158,6 +158,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+$(call soong_config_set,stagefright,target_disable_thumbnail_block_model,true)
 # Consumer IR
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
